@@ -11,11 +11,11 @@ from twilio.rest import Client
 import schedule 
 import random, time
 
-cellphone = +13304233291
-twilio_number = +19894364933
+cellphone =             #Enter number you want to send to
+twilio_number =         #Enter twilio api phone number
 def send_message(quote):
-    account = "ACbdb2cb2993cfc52ab2a094b4793212d5"
-    token  = "51c053a4d141a46c2e6b472d132df957"
+    account = ""
+    token  = ""
     client = Client(account,token)
 
     client.messages.create(to=cellphone,
